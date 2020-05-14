@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<script type="text/javascript">
+			function fn(){
+			var red = document.getElementById("us");
+			var blue = document.getElementById("pass");
+	if(red.value.trim()=="")//if no values written remain to that page only , trim() used for no blank spaces between.
+		  {alert("Blank Username.");
+		     return false;}
+		else if(blue.value.trim()=="")
+		{
+			alert("Blank Password.");
+			return false;
+		}
+		else if(blue.value.trim().length<5)//if password is less than five characters remain to that page and give an alert.
+	    { alert("Password too short.");
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+</script>
+</head>
+<body>
+   <h1>WELCOME!</h1>
+   <h1>LOGIN PAGE</H1>
+	<form onsubmit="return fn()" action="upload.html" target="_blank"><!--will take to new html document if no blank values-->
+		<input type="text" id="us" placeholder="Username"/>
+		<br><br>
+        <input type="password" id="pass" placeholder="password"/>
+        <label style="color:red;">Mininmum 5 characters maximum 10.</label>
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>
