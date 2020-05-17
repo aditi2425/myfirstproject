@@ -2,39 +2,50 @@
 <html>
 <head>
 	<title>UNSEEN TREASURE</title>
-	<header>UNSEEN TREASURE</header><!--Title written in header-->
+	 <!--link to css sheet-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--link to another font-->
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+	<!--link to heading font-->
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Lora&display=swap" rel="stylesheet">
+	
 	<header>
 		<nav>
-			
-				<a href="Unseen_treasure.html">Home</a><br>
-				<a href="About.html">About Us</a><br>
-				<a href="login.html" target="_blank">Login</a>
-		</nav><br><br>
-	  <form action="pic.html" target="_blank">
-	       <button type="submit">CLICK TO VIEW RARE SPECIES</button><!--button when clicked will take to the page of rare species pic and descr.-->
-	  </form><br><br>
-	            <a href="login.html" target="_blank">Login</a><!--They can use navigation bar to login or can login directly from here too-->
+			<ul id="bullet">
+				<li class="team"><a href="Unseen_treasure.html">Home</a></li>
+				<li class="team"><a href="About.html">About Us</a></li>
+				<li class="team"><a href="login.html" target="_blank">Login</a></li>
+			</ul>
+		</nav>
 	</header>
+	
+		   
            <script type="text/javascript">
-                  function fn1(){ alert("First login/signin");}
+                  function fn1(){ alert("First login/signsin");}
            </script>			
 </head>
 <body>
     <section>
+    	<p style="background-image:url(photo-1547001810-be486b02f55e.jpg);">UNSEEN TREASURE</p>
+    	 <form action="pic.html" target="_blank">
+	      <button id="first" type="submit">CLICK TO VIEW RARE SPECIES</button></li><!--button when clicked will take to the page of rare species pic and descr.--></form>
+	
     	<h1>Rare Species Found In India</h1><!--Heading of the website-->
-    	<ul>
+    <div>
+    	<ul >
     		<li>Learn about the unique and interesting behaviour of rare species.</li>
     		<li>Understand how important is to protect them.</li>
     		<li>If you see any animal or bird around you which you think might be rare, feel free to post on our website.</li>
     		<li>You can upload image and the description analysed by you of the animal or bird.</li>
     	</ul>	
+    </div>
      </section><br><br>
     <form>
-    	<button type="button" onclick="fn1()">UPLOAD YOUR FILE</input><!--button to upload files-->
+    	<button type="button" class="click" id="second" onclick="fn1()">UPLOAD YOUR FILE</input><!--button to upload files-->
     </form>
     
     <form action="uploaded.html" target="_blank"><!--one more button to see uploaded file--><!--need to be aligned-->
-    	<button type="submit">NEWLY UPLOADED SPECIES</button>
+    	<button type="submit" class="click" id="third">NEWLY UPLOADED SPECIES</button>
     </form>	
 </body><br><br>
 <footer>All rights reserved.<br>

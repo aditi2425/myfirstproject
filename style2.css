@@ -1,0 +1,56 @@
+body{
+	background-image: url(photo-1589620014389-d52fa7522add.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+h1{
+	font-family: 'Cormorant Garamond', serif;
+	color:white;
+	font-size:85px;
+	text-align: center;
+	
+}
+div{
+	font-family:'Cormorant Garamond', serif;
+	color:black;
+	font-size:38px;
+	text-align: center;
+	margin-left: 100px;
+	margin-right: 100px;
+
+}
+
+hr{
+	border:2px solid black;
+	width: 50%;
+}
+header{
+ 	background-color:black;
+ 	padding:10px;
+ 	width:100%;
+ 	margin-top: 0px;
+   }
+   li{
+   	 display: inline;
+   	 margin:100px;
+   }
+   ul{
+        list-style: none;
+   }
+   li a{
+   	color:white;
+   	text-decoration: none;
+   	font-size: 20px;
+  }
+  a:hover{
+  	color:green;
+  	text-decoration: none;
+  }
+  
+  	 footer{
+ 	background-color: black;
+ 	color:white;
+ 	padding:10px;
+ 	text-align: center;
+ }
+  
