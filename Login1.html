@@ -8,12 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!--link to css page-->
-    <link rel="stylesheet" type="text/css" href="boot3.css">
-  
-  
-
-    <title>UNSEEN TREASURE</title>
-       
+    <link rel="stylesheet" type="text/css" href="boot2.css">
+   
+    <title>Login Page</title>
+      
+           
       <!--navbar-->
      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
   
@@ -30,23 +29,45 @@
       <li class="nav-item">
         <a class="nav-link" href="About1.html" style="color: white; text-decoration: none; font-size: 20px; margin-left: 100px;" >About Us</a>
       </li>
-    
+      
      </ul>
-     </div>
+     
+  </div>
 </nav>
 
-  </head>
-  <body>
-   
-       <h1>Upload your files</h1>
-        <form>
-          <label>Upload the description of animal/bird:</label><br>
-          <input type="file">
-            <br><br>
-          <label>Upload the image:</label><br>
-          <input type="image">
-        </form>
-
+   <script type="text/javascript">
+      function fn(){
+      var red = document.getElementById("us");
+      var blue = document.getElementById("pass");
+  if(red.value.trim()=="")//if no values written remain to that page only , trim() used for no blank spaces between.
+      {alert("Blank Username.");
+         return false;}
+    else if(blue.value.trim()=="")
+    {
+      alert("Blank Password.");
+      return false;
+    }
+    else if(blue.value.trim().length<5)//if password is less than five characters remain to that page and give an alert.
+      { alert("Password too short.");
+      return false;
+    }
+    else {
+      return true;
+    }
+  }
+</script>
+</head>
+<body>
+   <h1>WELCOME!</h1>
+   <h1 id="un">LOGIN PAGE</H1>
+  <form onsubmit="return fn()" action="upload.html" target="_blank"><!--will take to new html document if no blank values-->
+    <input type="text" id="us" placeholder="Username"/>
+    <br><br>
+        <input type="password" id="pass" placeholder="password"/>
+        <label style="color:red;">Mininmum 5 characters maximum 10.</label><br>
+       <br>
+        <button type="submit">SUBMIT</button>
+    </form>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
